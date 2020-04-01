@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Coiny|Oswald|Pacifico|Rubik" rel="stylesheet"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+        html {
+            overflow-x: hidden;
+        }
+
+     body {
+         margin: 4.5px;
+     }
+    * {box-sizing: border-box;}
+    body 
+    .mySlides {display: none;}
+    img {vertical-align: middle;}
+    
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+    
+    /* Caption text */
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+      font-family: "Oswald", sans-serif;
+    }
+    
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+    
+    /* The dots/bullets/indicators */
+    .dot {
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+    
+    .active {
+      background-color: #717171;
+    }
+    
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+    
+    @-webkit-keyframes fade {
+      from {opacity: .4} 
+      to {opacity: 1}
+    }
+    
+    @keyframes fade {
+      from {opacity: .4} 
+      to {opacity: 1}
+    }
+    
+        /* Style the tab */
+.tab {
+    background-color: rgb(44, 105, 22);
+  overflow: hidden;
+  border: 1px  #ccc;
+  
+  margin-left: -5px;
+  margin-right: -5px;
+  padding: -7px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    font-family: 'Coiny', sans-serif;
+  background-color: rgb(44, 105, 22);
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 12px;
+  margin-left: -5px;
+  transition: 0.5s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+  transition: 0.5em;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  -webkit-animation: fadeEffect 1s;
+  animation: fadeEffect 1s;
+}
+             #reviews img {
+                display: block;
+          width: 100%;
+          height: auto;
+          left: -200px;
+            }
+            #banner {
+                margin: -4px;
+                padding: 20px;
+                font-family: "Pacifico" , sans-serif;
+                background-color: rgb(2, 156, 4.5);
+                color: white;
+                z-index: 1;
+            }
+          
+            #navbar {
+                margin: 5px;
+                padding: 0;
+                
+                background-color: rgb(44, 105, 22);
+                color: white;
+                margin-left: -5px;
+                margin-right: -5px;
+                margin-bottom: 10px;
+            }
+            #navabr:hover {
+                 box-shadow: 5px 5px 5px rgb(15, 14, 15);
+            }
+            #main {
+                margin: 0;
+                
+                background-color: white;
+                color: black;
+            }
+            #footer {
+                margin: -5px;
+                padding: 20px;
+                
+                background-color: rgb(16, 122, 33);
+                color: white;
+            }
+            
+            #home {
+                padding: 20px;
+            }
+            #news {
+                background-color: rgb(245, 245, 245);
+                padding: 20px;
+            }
+            #projects {
+                padding: 20px;
+            }
+            #apply {
+                background-color: rgb(245, 245, 245);
+                padding: 20px;
+            }
+            .header1 {
+            font-family: "Pacifico";
+        }
+            
+            h1 {
+                margin: 0;
+                
+                font-size: 35px;
+            }
+            h2 {
+                margin: 0;
+                font-family: "Oswald", sans-serif;
+            }
+            h3 {
+                margin: 0;
+                margin-top: 10px;
+                font-family: "Poppins", sans-serif;
+            }
+            
+            p {
+                margin: 5px;
+                font-family: "Oswald", sans-serif;
+            }
+            
+            ul {
+                margin: 0;
+                list-style-type: none;
+               
+                overflow: hidden;
+                padding: 0;
+            }
+            li {
+                font-family: "Rubik";
+            }
+            li a {
+                float: left;
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+            li a:hover {
+                background-color: rgb(32, 125, 15);
+            }
+            a {
+                text-decoration: none;
+                color: rgb(38, 107, 15);
+                font-family: "Oswald", sans-serif;
+            }
+            a:hover {
+                text-decoration: none;
+            }
+            #reviews {
+                padding: 20px;
+            }
+            #subscribe {
+                padding: 20px;
+            }
+            #slogan {
+                font-size: 5px;
+            }
+            .contest-image {
+                display: block;
+             position: relative;
+             left: 161px;
+             margin: 10px;
+             width: 137px;
+             height: 138px;
+            }
+            img {
+                display: block;
+                position: relative;
+                left: 150px;
+            }
+           
+            #subscribe {
+                font-size: 10px;
+            }
+            #newsevents {
+                text-align: center;
+                margin: 10px;
+            }
+            .see {
+                text-align: center;
+                margin: 10px;
+            }
+                .button {
+                    font-family: "Oswald", sans-serif;
+      border-radius: 4px;
+      background-color: rgb(44, 105, 22);
+      border: none;
+      color: rgb(255, 255, 255);
+      text-align: center;
+      font-size: 28px;
+      padding: 20px;
+      width: 200px;
+      transition: all 0.5s;
+      cursor: pointer;
+      margin: 5px;
+    }
+
+        .button span {
+          cursor: pointer;
+          display: inline-block;
+          position: relative;
+          transition: 0.5s;
+        }
+        
+        .button span:after {
+          content: '»';
+          position: absolute;
+          opacity: 0;
+          top: 0;
+          right: -20px;
+          transition: 0.5s;
+        }
+        
+        .button:hover span {
+          padding-right: 25px;
+        }
+        
+        .button:hover span:after {
+          opacity: 1;
+          right: 0;
+        }
+        .id1 {
+            color: white;
+        }
+        .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+        /* Modal Content */
+        .modal-content {
+            background-color: #fefefe;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+        }
+        
+        /* The Close Button */
+        .close {
+            color: #aaaaaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        
+        .close:hover,
+        .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        h3 {
+            margin-top: 10px;
+        }
+        .quote {
+            font-family: "Oswald", sans-serif;
+            background-color: rgb(44, 105, 22);
+            color: white;
+            border-radius: 5px;
+            padding: 5px;
+            padding-left: 10px;
+        }
+        .subh1 {
+            font-family: "Oswald", sans-serif;
+        }
+        .issuenum {
+            text-align: left;
+        }
+        .accordion {
+              background-color: rgb(44, 105, 22);
+              color: white;
+              cursor: pointer;
+              padding: 18px;
+              width: 100%;
+              border: none;
+              text-align: left;
+              outline: none;
+              font-size: 15px;
+              transition: 0.4s;
+              font-family: "Oswald", sans-serif;
+            }
+            
+            .active, .accordion:hover {
+              background-color: #ccc;
+            }
+            
+            .panel {
+              padding: 0 18px;
+              background-color: white;
+              max-height: 0;
+              overflow: hidden;
+              transition: max-height 0.2s ease-out;
+              margin: 10px;
+            }
+           
+</style>
+</head>
+<body>
+<div id="banner">
+            
+            <h1 class="header2"> The Programming Times</h1>
+            <p>Good News, Good Programming, Good Times</p>
+            <h3 style="display:inline"></h3>
+            
+        </div>
+        
+       
+        <div class="tab">
+ <button class="tablinks" onclick="openCity(event, 'News')">News</button>
+  <button class="tablinks" onclick="openCity(event, 'Editorials')">Editorials</button>
+  <button class="tablinks" onclick="openCity(event, 'Reviews')">Reviews</button>
+  
+  <button class="tablinks" onClick="openCity(event, 'About')">About</button>
+  <button class="tablinks" onClick="openCity(event, 'Subscribe')">Subscribe</button>
+  <button class="tablinks" onClick="openCity(event, 'Interviews')">Interviews</button>
+</div>
+
+<div id="News" class="tabcontent">
+            <div class="quote">QUOTE of the WEEK:<br /><i>"I was obliged to be industrious. He who is equally industrious will succeed equally well"</i><br />-Johann Sebastian Bach</div> 
+             <h2 id="newsevents">News/Events this week</h2>
+            <p class="see">See what is new this week </p>
+            
+            <div class="slideshow-container">
+            
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <img src="https://www.khanacademy.org/computer-programming/contest-constructing-pi/6689261776633856/5741031244955648.png" href="#news" style="width:50%">
+              <div class="text"> Official Contest: Constructing Pi Results</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
+              <img src="https://www.khanacademy.org/computer-programming/history-of-the-programming-times/4680021232353280/5750085036015616.png" style="width:50%">
+              <div class="text">One year of TPT</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <img src="https://www.khanacademy.org/computer-programming/mr-khan-i-dont-feel-so-good/6223881678979072/5150795827347456.png" style="width:50%">
+              <div class="text">Chester Banks returns</div>
+            </div>
+            
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+            </div>
+                  
+                    <div id="main">
+                        
+                        <div id="news">
+                            
+                            <h2> News this week <br />April 6-13, 2019 <br /><h3><a href="#pi">Constructing Pi results</a> &middot; <a href="#codrs">Classic coders return</a> &middot; <a href="#contst">Contest being held by KING</a></h3></h2>
+                            <h3 id="pi"><img src="https://www.khanacademy.org/computer-programming/contest-constructing-pi/6689261776633856/5741031244955648.png">Constructing Pi results are out</h3>
+                        <p><a href="https://www.khanacademy.org/computer-programming/contest-constructing-pi/6689261776633856">Contest: Constructing Pi</a>'s long awaited results have finally been released. The users who placed are as follows:<br /> <b>Advanced Bracket</b>  <a href = 'https://www.khanacademy.org/computer-programming/almost-200000-digits-of/5580829354983424'><img src = "https://www.khanacademy.org/computer-programming/almost-200000-digits-of/5580829354983424/latest.png"></a>
+                <p>Almost 200000 digits of π was created by <a href = 'https://www.khanacademy.org/profile/kaid_884271512496343411898406'>Element118</a>. This program does a profound job of calculating Pi, and provides a fun user interface. It uses state based decomposition of workflow and experiments with multi-precision math and the author's own implementation of root.</p>
+                <br><br><br>
+                <a href = 'https://www.khanacademy.org/computer-programming/pie-to-15-slices/4775468274384896'><img src = "https://www.khanacademy.org/computer-programming/pie-to-15-slices/4775468274384896/latest.png"></a>
+        <p>PIE to 15 SLICES by <a href = 'https://www.khanacademy.org/profile/kaid_1150007666963352211220152'>Daniel Shin</a> uses the Archimedes method to complete the objective of the contest. The display and colors added a nice touch and visually amplified what was already a great entry into a truly remarkable program.</p><br><br><br>
+        <a href = 'https://www.khanacademy.org/computer-programming/calculating-pi-from-random-integers/6223287365500928'><img src = "https://www.khanacademy.org/computer-programming/calculating-pi-from-random-integers/6223287365500928/latest.png"></a>
+        <p>Calculating Pi from Random Integers, designed by <a href = "https://www.khanacademy.org/profile/kaid_519533518564725127068312">WillTheProgrammer</a> was an imaginative method to calculate Pi. It's inconventional path to find this irrational number is indisputably genius.</p><br><br>
+        <h3 style = "text-align : center;">Intermediate Bracket</h3>
+        <a href = 'https://www.khanacademy.org/computer-programming/wip-this-entry-is-gonna-be-irrationally-sweet/6575884534382592'><img src = "https://www.khanacademy.org/computer-programming/wip-this-entry-is-gonna-be-irrationally-sweet/6575884534382592/latest.png"></a>
+        <p>This entry is gonna be irrationally sweet was created by <a href = "https://www.khanacademy.org/profile/kaid_532099509490545138043790">Falcon of the Night</a>. It implements a creative verical scroll feature for full view of the text and helpful background information on the subject of this contest. Don't let it's somewhat confusing name fool you, it assuredly desrved this win!</p><br><br>
+        <a href = 'https://www.khanacademy.org/computer-programming/constructing-pi-area-of-a-square-and-circle/6240524520488960'><img src = "https://www.khanacademy.org/computer-programming/constructing-pi-area-of-a-square-and-circle/6240524520488960/latest.png"></a>
+        <p><a href = "https://www.khanacademy.org/profile/kaid_411396289622628393281887">😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀</a> created this cool entry. Constructing Pi: Area of a Square and Circle provides an interesting visual measurement calculation style. The program is overall well put together and the visual designs are excellent.</p>
+        <br>
+        <a href = 'https://www.khanacademy.org/computer-programming/constructing-pie/6616097412448256'><img src = "https://www.khanacademy.org/computer-programming/constructing-pie/6616097412448256/latest.png"></a>
+        <p>Constructing Pi(e) is a creative slideshow by <a href = "https://www.khanacademy.org/profile/kaid_448167876064919278688392">🍕MBONKA🍕</a>. It plays on the word Pi but also provides calculation information of this intriguing number.</p>
+        <br><br><br><br>
+        <h3 style = "text-align: center;">BEGINNER BRACKET</h3>
+        <a href = 'https://www.khanacademy.org/computer-programming/constructing-pi-no-longer-a-wip/4990428811198464'><img src = "https://www.khanacademy.org/computer-programming/constructing-pi-no-longer-a-wip/4990428811198464/latest.png"></a>
+        <p>Constructing Pi by <a href = "https://www.khanacademy.org/profile/kaid_1145188119786108209436444">Elizabeth Y.🌺</a> is another slideshow featuring explanations of Pi computation methods and shows just how large a partial value of this number can be. It uses colored gradients and has an overall pleasing graphic display in additional to what it teaches about the illogical Pi. </p><br><br>
+        <a href = 'https://www.khanacademy.org/computer-programming/pi-by-the-avatars/4650456458559488'><img src = "https://www.khanacademy.org/computer-programming/pi-by-the-avatars/4650456458559488/latest.png"></a>
+        <p>'Pi' by the Avatars was crafted by <a href = "https://www.khanacademy.org/profile/kaid_267132678206196116565877">storyteller24</a>. This entry had the avatars giving you information about Pi. It is a fun way to learn more with the avatar teachers. Although it doesn't feature Golden Winston, the creator will get him soon enough, as one of the few winners of this contest!</p><br>
+        <a href = 'https://www.khanacademy.org/computer-programming/happy-pi-day/6556499146014720'><img src = "https://www.khanacademy.org/computer-programming/happy-pi-day/6556499146014720/latest.png"></a>
+        <p><a href = "https://www.khanacademy.org/profile/kaid_277995115648614065258522">Start Traveler</a> just made it with Happy Pi Day, earning his Golden Winston. While others may wonder why this coder won, I believe the purple pie in the picture explains it all!</p>
+        <br>Congratulations to all who placed. If you did not, do not feel bad; there is always the <a href="https://www.khanacademy.org/computer-programming/contest-impossible-images/4783017065807872">new contest.</a></p>
+                            
+                            <h2 id="codrs">Classic coders return to Khan Academy</h2>
+                            <p><img class="contest-image" alt="contest-image" src="https://www.khanacademy.org/computer-programming/mr-khan-i-dont-feel-so-good/6223881678979072/6322025066496000.png"><br><i>Some people have moved on... but not us.
+<br>
+Not us.</i><br><a href="https://www.khanacademy.org/profile/chesterbanks/">Chester Banks</a> and Python have recently returned to the programming community. Cryptically, they have both responded to us by saying that they will be staying for the near future, although that is about all we know.</p>
+
+
+<h2 id="contst">Contest being hosted by KING STUDIOS</h2>
+<p> <a href="https://www.khanacademy.org/profile/kaid_1060696438578062597752457/discussion">KING STUDIOS</a> has challenged the community with a contest, namely <a href="https://www.khanacademy.org/computer-programming/contest-inspirational-message/4833888218742784">Contest: Inspirational Message.</a> <br/> <i>Your goal is to create a program (HTML only) that's inspirational. What message do you think is the most impactful?</i><br><b>The deadline is April 26, 2019.</b></p>
+                            </div>  
+                        </div>
+</div>
+
+<div id="Editorials" class="tabcontent">
+              <h3>Plagiarism - The Final Word</h3>
+              <p>Pagiarism is going wild on Khan Academy - literally. Classic coders whose programs have been forgotten are now being copied, the plagiarizers thinking nobody will find out. One such instance can be found <a href="https://www.khanacademy.org/computer-programming/spin-off-of-drawing-more-shapes-with-code/5012005863391232">here</a>. Now, luckily we have alert member of the community who are watchful for these things, but that is not always so. Many users figure that they can climb to success by skipping the steps of learning and hard work and instead take the easy way by building up a reputation with stolen code. This will not pay off, and if you or anyone you know is doing this, please stop or tell them to stop, for their own good and for the good of all the other members of this community.<br />Yours truly, <br />Bryce S.<br><br>Feel free to onform me of your opinion in the Tips and Thanks below.</p> 
+</div>
+
+<div id="Reviews" class="tabcontent">
+              <h3>Program reviews</h3><h3><a href="#switch">Switch</a> &middot; <a href="#escape">Escape the Prison</a> &middot; <a href="#3dpong">3D Pong</a></h3>
+              <h2>Program of the week</h2>
+              <h3 id="switch">Switch by <a href="https://www.khanacademy.org/profile/PythonProgramming7/">Python</a></h3>
+              <p><img src="https://www.khanacademy.org/computer-programming/switch-by-python/6081522244878336/5599414170779648.png"><a href="https://www.khanacademy.org/computer-programming/switch-by-python/6081522244878336">Switch</a> is a very fun and quite addicting game created by prestigious Python (see Interviews tab). Even though the graphics are not the game's best side, the gameplay, transitions, and overall clean feel of the game make up for this. The point of this Python-coded platformer is simple - get as far as possible by switching walls to avoid oncoming obstacles that may disrupt your progress. There are many things to <i>look</i> for as well as <i>look out</i> for, including "pups" which will move you up levels, as well as coins which increase your score. Overall, the pros outweigh the cons in this classic Python game. This game was rated by The Programming Times:<br><b>Complexity</b>: 6.75/10<br><b>Fun:</b> 9.25/10<br><b>Graphics:</b> 4.5/10<br><b>Effects/Transitions</b>: 7.75/10</p><br><h2>Other reviews</h2>
+              <h3 id="escape">Escape The Prison by <a href="https://www.khanacademy.org/profile/kaid_240238746348096945775395">Varun</a></h3><p><img src="https://www.khanacademy.org/computer-programming/escape-the-prison/6015950199029760/6353836198952960.png"><a href="https://www.khanacademy.org/computer-programming/escape-the-prison/6015950199029760">Escape The Prison</a> is a platformer game by Valun. In this game, as the title portrays, you must escape the prison: however, this is not easy and leads to hours of gaming through the twenty-five levels. Each level brings new treacherous dangers, including acid and lava, making it more difficult to reach the end portal and clear the level. The graphics are amazing for a platformer, and the transitions are pretty well done. The only downside is the lag, which may be too much for older browsers. This game was rated by The Programming Times:<br><b>Complexity</b>: 4.25/10<br><b>Fun:</b> 7.75/10<br><b>Graphics:</b> 6.50/10<br><b>Effects/Transitions</b>: 7.75/10</p><br> 
+              <h3 id="3dpong">3D Pong by <a href="https://www.khanacademy.org/profile/kaid_420312059609935963834774">Sy</a></h3><p><img src="https://www.khanacademy.org/computer-programming/3d-pong/6427334632112128/5996745080799232.png"><a href="https://www.khanacademy.org/computer-programming/3d-pong/6427334632112128">3D Pong</a> is a game from Sy. It portrays the classic ping-pong table ready to play in three dimensions. The graphics are not very realistic, although the 3D effect is impressive. AS for the gameplay, you <i>do</I> compete with the CPU, which can sometimes be tough - and very laggy. <br />This game was rated by The Programming Times:<br><b>Complexity</b>: 7.75/10<br><b>Fun:</b> 6.5/10<br><b>Graphics:</b> 2.75/10<br><b>Effects/Transitions</b>: 6.75/10<br></p><h3></h3>
+</div>
+<div id="External News" class="tabcontent">
+
+</div>
+<div id="About" class="tabcontent">
+    <h2>About The Programming Times</h2>
+    <h3>The Purpose</h3><p>The purpose of The Programming Times is to provide the Khan Academy programming community with reliable news and keep users up-to-date with the latest programs and events. At the time of founding, The Programming Times was the only newspaper doing this. Now that there are many other newspapers, this need is not as pertinent.</p>
+    <h3>The History</h3><p> The Programming Times was founded on January 4, 2018 by Bryce S. The first issue was released the following weekend. It racked in only five viewers, a start of obscurity. Now, The Programming Times is Khan Academy's longest running newspaper. No other Khan Academy newspaper has gotten to 25 issues. Over the months, The Programming Times has achieved quite a prestigious name as a deliverer of reliable news.<h3>A "one man show"</h3><p>The Programming Times was founded and continues to be ran by one person and only one - Bryce S. Please be lenient if you do not get an issue when promised, as running a weekly newspaper and doing the website design for it is a bit overwhelming. I do not accept sponsors; however, if you would like to post the latest issue on your subscription page, feel free.</p><h3>Contact</h3><p>You can contact The Programming Times on Khan Academy weekdays from 3pm to 5pm Central Standard Time on Khan Academy.
+</div>
+    <div id="Subscribe" class="tabcontent">
+             <h1 class="subh1">Subscribe to The Programming Times!</h1>
+             <p>You can subscribe to <i>The Programming Times</i> <a href="https://www.khanacademy.org/computer-programming/subscribe-to-the-programming-times/6209479898071040">here</a>. Why subscribe? <p><ul><li>Be the first to know of the latest weekly issues!</li><li>Get updates about the paper.</li><li>Keep up to date on the latest news you can use!</ul></p><br><button class="button" id="myBtn"><span> Subscribe </span></button>
+             
+          
+
+<!-- Trigger/Open The Modal -->
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">×</span>
+    <p>Thank you for subscribing to Khan Academy's number one newspaper.</p><br><a href="https://www.khanacademy.org/computer-programming/subscribe-to-the-programming-times/6209479898071040">Take me to the subscription page</a>
+  </div>
+
+</div>
+            </div>
+            <div id="Interviews" class="tabcontent"><h2>Interviews this week</h2>
+<p>Click on the button to view the respective interview.</p>
+
+<button class="accordion">Interview with Sy</button>
+<div class="panel">
+  <p><b>The Programming Times:</b> Why did you learn to code? </p>
+  <p><a href="https://www.khanacademy.org/profile/kaid_420312059609935963834774/discussion">Sy</a>:  I started learning how to code after I got a 3D printer and wanted to know how the printer took commands from the user.</p>
+  <p> <b>The Programming Times</b>: How long did it take you to learn?</p>
+  <p>Sy: 7 and a half months to where I am now.</p>
+  <p><b>TPT</b>:  What do you think is your best program?</p>
+  <p>Sy: Color Cube by far as the joystick is a masterpiece (to me) alone.</p>
+  <p> <b>TPT</b>:  Do you have any advice for people who want to learn?</p>
+  <P>Sy: Try to learn from advanced programs to help you grasp a better understanding of a topic such as OOP.</p>
+  <p><b>TPT:</b> What program is your favorite?</p>
+  <p>Sy: Hmm…probably KWC’s Memory Card game.</p>
+  <p><b>TPT</b>:  Anything else you want to include, i.e. shoutouts?</p>
+  <p>Sy: Shoutout to Non-pirate for helping me learn more and more about code along the way!</p>
+  <p><b>TPT:</b> Who are your favorite Programmers?</p>
+  <p>Sy: KWC and To13 would be my favorite programmers.</p>
+  <P><b>TPT</b>: Thank you for your time!</p>
+  
+</div>
+
+<button class="accordion">Interview with Python</button>
+<div class="panel">
+  <p><b>The Programming Times:</b> What was the inspiration for your game Sky?</p>
+  <p>Python: Impact By Planet.</p>
+  <p><b>TPT</b>: Are you planning to stay here on KA for the near future?</p>
+  <p>Python: Yee.</p>
+  <p><b>TPT</b>: Do you have any games or other future program releases planned?</p>
+  <p>Python: Yee.</p>
+  <p><b>TPT:</b> Do you code off of KA?</p>
+  <p>Python: Yee.</p>
+  <p><b>TPT</b>: How long have you been coding <i>on</i> KA?</p>
+  <p>Python: Three years.</P>
+  <p><b>TPT:</b>: What advice would you give to beginners?</P>
+  <p>Python: Coding takes time. Patience is the key.</p>
+  <p><b>TPT:</b> Thank you for your time!</p>
+</div>
+
+
+</div>
+
+
+          
+      
+        <footer id="footer">
+            
+            <p>&copy; Bryce S.</p><p class="issuenum">The Programming Times Issue 27</p>
+            
+        </footer>
+  
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+</body>
+</html> 
